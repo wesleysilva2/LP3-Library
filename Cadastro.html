@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="validacao.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <a href="Exercicio.html"><button type="button">RETORNE PARA PAGINA PRINCIPAL</button></a>
+
+    <h2>Pagina de Cadastro</h2>
+
+    <br><br>
+
+</head>
+<body style="background-color:rgb(22, 142, 211);">
+
+    <form action="" name="myFormC" onsubmit="return validateFormCadastro()" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="Cname"><br><br>
+        <label for="email">E-mail Address:</label>
+        <input type="text" id="email" name="Cemail"><br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="Csenha" minlength="8"><br><br>
+        <label for="senha">Confirme a senha:</label>
+        <input type="password" id="senha" name="CsenhaR" placeholder="Exatamente igual" minlength="8"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- <a href="Exercicio.html"><button type="button">Confirmar Dados</button></a>   Como ainda não tem conexão com nada ele so volta para pagina principal -->
+    
+    
+</body>
+
+<footer>
+    <p><b>Endereço: Bairro Abóbada Celeste, Rua Cosmo - Numero 07</b></p>
+    <p><b>Contatos: Telefone: 71 38755986 Celular: 71 912345678</b></p>
+    <p><b>Email: observatorio_lunar@gmail.com</b></p>
+</footer>
+</html>

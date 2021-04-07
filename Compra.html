@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="validacao.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+
+    <a href="Exercicio.html"><button type="button">RETORNE PARA PAGINA PRINCIPAL</button></a>
+
+    <h2>Forma de Pagamento</h2>
+    <br><br>
+</head>
+
+<body style="background-color:rgb(22, 142, 211);">
+    <form action="" name="myFormCo" onsubmit="return validateFormCompra()" method="post">
+        <p><b>Endereço De entrega</b></p>
+        <label for="namee">Estado:</label>
+        <input type="text" id="namee" name="namee"><br><br>
+        <label for="namec">Cidade:</label>
+        <input type="text" id="namec" name="namec"><br><br>
+        <label for="namer">Rua:</label>
+        <input type="text" id="namer" name="namer"><br><br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro"><br><br>
+        <label for="quantity">Numero da casa:</label>
+        <input type="number" id="quantity" name="numeroCasa" min="1" max="9999"><br><br>
+        <label for="numerocep">CEP:</label>
+        <input type="number" id="numerocep" name="numerocep" min="1" max="99999999"><br><br>
+        <label for="pontor">Ponto de Referencia:</label>
+        <input type="text" id="pontor" placeholder="Opicional" name="pontor"><br><br>
+
+        <p><b>Dados de Pagamento</b></p><br>
+        <label for="rank">Selecione o metodo de pagamento:</label>
+        <select name="rank" id="rank">
+        <option value="boleto">Boleto Bancario</option>
+        <option value="cartao">Cartão de Credito</option>
+        <option value="pix">PIX</option>
+        </select>
+        <br><br>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- <a href="Exercicio.html"><button type="button">Confirmar Dados de Compra</button></a>  Como ainda não tem conexão com nada ele so volta para pagina principal -->
+
+</body>
+
+
+<footer>
+    <p><b>Endereço: Bairro Abóbada Celeste, Rua Cosmo - Numero 07</b></p>
+    <p><b>Contatos: Telefone: 71 38755986 Celular: 71 912345678</b></p>
+    <p><b>Email: observatorio_lunar@gmail.com</b></p>
+</footer>
+
+
+</html>
